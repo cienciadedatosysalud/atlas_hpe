@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><title>Atlas de Hospitalizaciones Potencialmente Evitables</title><link rel="stylesheet"></head> <body style="font-family: sans-serif; line-height: 1.6; margin:0; padding:0;"> <nav style="background:#E2C14F;color:black;padding:1rem;display:flex;align-items:center;justify-content:space-between;"> <ul style="display:flex;gap:1rem;list-style:none;margin:0;padding:0;"> <li style="position:relative;"> <a href="/atlas_hpe/" style="color:black;text-decoration:none;"> ATLAS VPM Hospitalizaciones Potencialmente Evitables </a> </li><li style="position:relative;">  <span style="cursor:pointer;">Evolución variación ▼</span> <ul style="
+              display:none;
+              position:absolute;
+              top:100%;
+              left:0;
+              background:#ECD87A;
+              padding:0.5rem 0;
+              margin:0;
+              list-style:none;
+              z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+              min-width:220px;
+              border-radius:4px;
+            " class="dropdown-menu"> <li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/evolucion/sns" style="color:black;text-decoration:none;display:block;"> Sistema Nacional de Salud </a> </li><li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/evolucion/ccaa" style="color:black;text-decoration:none;display:block;"> Comunidad Autónoma </a> </li><li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/evolucion/area" style="color:black;text-decoration:none;display:block;"> Área Sanitaria </a> </li><li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/evolucion/zbs" style="color:black;text-decoration:none;display:block;"> Zona Básica de Salud </a> </li> </ul>  </li><li style="position:relative;">  <span style="cursor:pointer;">Variación geográfica ▼</span> <ul style="
+              display:none;
+              position:absolute;
+              top:100%;
+              left:0;
+              background:#ECD87A;
+              padding:0.5rem 0;
+              margin:0;
+              list-style:none;
+              z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+              min-width:220px;
+              border-radius:4px;
+            " class="dropdown-menu"> <li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/geo/tramos_etarios" style="color:black;text-decoration:none;display:block;"> Variación geográfica por tramos etarios </a> </li><li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/geo/sexo" style="color:black;text-decoration:none;display:block;"> Variación geográfica por sexo </a> </li><li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/geo/all" style="color:black;text-decoration:none;display:block;"> Variación geográfica </a> </li> </ul>  </li><li style="position:relative;">  <span style="cursor:pointer;">Perfil de desempeño ▼</span> <ul style="
+              display:none;
+              position:absolute;
+              top:100%;
+              left:0;
+              background:#ECD87A;
+              padding:0.5rem 0;
+              margin:0;
+              list-style:none;
+              z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+              min-width:220px;
+              border-radius:4px;
+            " class="dropdown-menu"> <li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/perfil/area" style="color:black;text-decoration:none;display:block;"> Perfil de desempeño por Área Sanitaria </a> </li><li style="padding:0.5rem 1rem;"> <a href="/atlas_hpe/perfil/zbs" style="color:black;text-decoration:none;display:block;"> Perfil de desempeño por Zona Básica de Salud </a> </li> </ul>  </li> </ul> <a href="https://cienciadedatosysalud.org/" target="_blank"> <img src="/atlas_hpe/images/logo_25_años.png" alt="Logo_25" style="height:60px;object-fit:contain;"> </a> </nav> <script type="module">document.querySelectorAll("nav li").forEach(e=>{const o=e.querySelector("span"),n=e.querySelector(".dropdown-menu");o&&n&&(e.addEventListener("mouseenter",()=>n.style.display="block"),e.addEventListener("mouseleave",()=>n.style.display="none"))});</script> <main style="max-width: 1200px; margin: 2rem auto; padding: 1rem;"> <h1 style="font-size:2.2rem; font-weight:bold; margin-bottom:1rem;">
+Bienvenido al Atlas de Hospitalizaciones Potencialmente Evitables
+</h1> <p>
+Explora la diversidad de hospitalizaciones potencialmente evitables en
+        distintas regiones. Descubre patrones, tendencias y datos relevantes
+        para comprender mejor las variaciones en la atención médica.
+</p> <!-- Iframe con gráfico embebido --> <div style="width: 100%; height: 35vh; overflow: hidden; margin:2rem 0;"> <iframe src="./embeds/total_HPE.html" style="width: 100%; height: 100%; border: none; overflow: hidden;" scrolling="no">
+        </iframe> </div> <h2>Secciones del Atlas</h2> <h3>Evolución de Variación</h3> <ul> <li> <strong>Sistema Nacional de Salud</strong>: Analiza la evolución de la
+          práctica médica a nivel nacional.
+</li> <li> <strong>Comunidades Autónomas</strong>: Descubre cómo varían las
+          hospitalizaciones potencialmente evitables en las diferentes
+          comunidades autónomas.
+</li> <li> <strong>Área Sanitaria</strong>: Profundiza en los datos de variación
+          a nivel de áreas sanitarias específicas.
+</li> <li> <strong>Zona Básica de Salud</strong>: Explora la variación en zonas
+          básicas de salud para obtener una visión más detallada.
+</li> </ul> <h3>Variación Geográfica</h3> <ul> <li> <strong>Variación Geográfica por Tramos Etarios</strong>: Conoce cómo
+          varían las hospitalizaciones potencialmente evitables según los grupos
+          de edad.
+</li> <li> <strong>Variación Geográfica por Sexo</strong>: Analiza las
+          diferencias en las hospitalizaciones potencialmente evitables según el
+          sexo.
+</li> <li> <strong>Variación Geográfica</strong>: Examina la variación en general
+          a lo largo de diferentes regiones.
+</li> </ul> <h3>Perfil de Desempeño</h3> <p>
+Evalúa el desempeño de las distintas áreas y zonas básicas de salud en
+        hospitalizaciones potencialmente evitables y compara resultados.
+</p> <h2>Recursos</h2> <ul> <li>Infografía (pendiente)</li> <li> <a href="https://cienciadedatosysalud.org/wp-content/uploads/Metodologia-y-codigos-Atlas-HPE-ZBS-2023_04092023_v2.pdf" target="_blank">
+Metodología
+</a> </li> <li>Policy brief (pendiente)</li> </ul> <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 4rem;"> <img src="/atlas_hpe/images/logo_iacs.png" alt="Logo IACS" style="width: 200px; height: auto;"> <img src="/atlas_hpe/images/logo_ministerio_san.jpg" alt="Logo GOB España" style="width: 200px; height: auto;"> <img src="/atlas_hpe/images/logo_ricaps.png" alt="Logo RICAPPS" style="width: 200px; height: auto;"> <img src="/atlas_hpe/images/logo_isciii.svg" alt="Logo ISCIII" style="width: 200px; height: auto;"> <img src="/atlas_hpe/images/UE-FEDER_0.jpg" alt="Logo FEDER" style="width: 200px; height: auto;"> </div> </main> </body></html>
